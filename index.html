@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Homework #4</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-image: url('Img/background.png');
+			}
+			ul {
+			    display: block;
+			    margin: 0;
+			    padding: 0;
+			    list-style: none;
+			}
+			ul:after {
+			    display: block;
+			    content: ' ';
+			    clear: both;
+			    float: none;
+			}
+			ul.menu > li {
+				margin-left: 5%;
+			    float: left;
+			    position: relative;
+			}
+			ul.menu > li > a {
+			    display: block;
+			    padding: 10px;
+			    color: white;
+			    background-color: #4f4f4f;
+			    text-decoration: none;
+			}
+			ul.menu > li > a:hover {
+			    background-color: black;
+			}
+			ul.submenu {
+			    display: none;
+			    position: absolute;
+			    width: 120px;
+			    top: 37px;
+			    left: 0;
+			    background-color: white;
+			    border: 1px solid #4f4f4f;
+			}
+			ul.submenu > li {
+			    display: block;
+			}
+			ul.submenu > li > a {
+			    display: block;
+			    padding: 10px;
+			    color: white;
+			    background-color: #4f4f4f;
+			    text-decoration: none;
+			}
+			ul.submenu > li > a:hover {
+			    text-decoration: underline;
+			}
+			ul.menu > li:hover > ul.submenu {
+			    display: block;
+			}
+			div.wrapper {
+			width:100%;
+			height: 500px;
+			}
+			div.left_block {
+			float:left;
+			width:200px;
+			margin-left: 12%;
+			background-color: #76897b;
+			height: 400px;
+			}
+			div.right_block {
+			float:right;
+			width:200px;
+			margin-right: 15%;
+			background-color: #76897b;
+			height: 400px;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="Img/logo.png" style="margin-left: 11%; margin-top: 5%;"/>
+		<img src="Img/contacts.png" style="margin-left: 35%; position: relative; "/>
+		<img src="Img/countries.png" style="margin-left: 60%"/>
+		<img src="Img/photo.png" style="margin-left: 11.2%"/>
+		<header style="height: 50px; background-color: #4f4f4f; width: 74.4%; margin-left: 11.2%; min-height: 10%;">
+			<ul class="menu">
+			    <li><a href=#>Главная</a>
+			    </li>
+			    <li><a href=#>Путешествия</a>
+			        <ul class="submenu">
+			            <li><a href=#>Путешествие 1</a></li>
+			            <li><a href=#>Путешествие 2</a></li>
+			            <li><a href=#>Путешествие 3</a></li>
+			        </ul>
+			    </li>
+			    <li><a href=#>Услуги</a>
+			        <ul class="submenu">
+			            <li><a href=#>Услуги 1</a></li>
+			            <li><a href=#>Услуги 2</a></li>
+			            <li><a href=#>Услуги 3</a></li>
+			        </ul>
+			    </li>
+			    <li><a href=#>Партнерам</a>
+			        <ul class="submenu">
+			            <li><a href=#>Партнерам 1</a></li>
+			            <li><a href=#>Партнерам 2</a></li>
+			            <li><a href=#>Партнером 3</a></li>
+			        </ul>
+			    </li>
+			    <li><a href=#>Отзывы клиентов</a>
+			    </li>
+			    <li><a href=#>О нас</a>
+			    </li>
+			    <li><a href=#>Контакты</a>
+			    </li>
+			</ul>
+		</header>
+		<div class="wrapper">
+			<div class="left_block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+			<div class="right_block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+		</div>
+	</body>
+</html>
