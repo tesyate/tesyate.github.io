@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Homework #5</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-image: url('img/bg.png');
+			}
+			header{
+				background-color: #085697;
+				min-height: 40px;
+				height: 2%;
+			}
+			ul.menu > li > a:hover {
+			    background-color: #4baeda;
+			    color: white;
+			}
+			ul.menu > li {
+			    margin-left: 2%;
+			    float: right;
+			    position: relative;
+			    color: #4baeda;
+			}
+			ul.menu > li > a {
+			    display: block;
+			    padding: 10px;
+			    color: #4baeda;
+			    background-color: #085697;
+			    text-decoration: none;
+			}
+			ul {
+			    display: block;
+			    margin: 0;
+			    padding: 0;
+			    list-style: none;
+			}
+			.gradient {
+				    background: #fefcea; /* Для старых браузров */
+				    background: linear-gradient(to top, #2f7bc5, #51b1dc);
+				    color: white;
+			}
+			#conteiner{
+				position: absolute;
+				width: 400px;
+				height: 450px;
+				background-color: rgba(0, 0, 0, 0.5);
+				border-radius: 30px;
+				margin-left: 38%;
+				margin-top: 5%
+			}
+			input{
+				background-color: #020000;
+				display: block;
+				margin-top: 2%;
+				margin-left: 25%;
+				height: 30px;
+				width: 50%;
+				color: white;
+				border: 0px;
+				padding-left: 10px;
+			}
+			input.check{
+				width: 15px;
+				height: 15px;
+			}
+			input.form:focus{
+				background-color: #1b5288;
+				box-shadow: 0 0 30px rgba(0,255,255,1);
+				margin-left: 25%;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<ul class="menu">
+			    <li><a href=# class="gradient" style="color: white;">Olal <u>Entrar</u> ou <u>Cadastre-se</u></a>
+			    </li>
+			    <li style="width: 200px"><a href=#><img src="img/icons.png" width="9%"/> Minhas Ofertas</a>
+			    </li>
+			    <li style="border-right: 2px solid #51b1dc;"><a href=#>Ajuda</a>
+			    </li>
+			    <li><a href=#>Contano</a>
+			    </li>
+			    <li><a href=#>Forum</a>
+			    </li>
+			    <li><a href=#>Vender</a>
+			    </li>
+			    <li><a href=#>Meu YouBike</a>
+			    </li>
+			</ul>
+		</header>
+		<div id="conteiner" style="text-align: center;">
+			<p style='margin-top: 3%; font-size: 20px; color: white;  font-family: "Tahoma";'>Cadastre-se</p>
+			<hr style="color: white; margin-top: 3%"/>
+			<button style="background-color: #364ebc; border-color: #364ebc; margin-top: 5%" >
+				<img src="img/butt.png"  style="vertical-align: middle"/>
+			</button>
+			<img src="img/line.png" style="margin-top: 3%"/>
+			<form>
+				<input type="text" placeholder="first name" class="form"/>
+				<input type="text" placeholder="second name" class="form"/>
+				<input type="email" placeholder="email adress" class="form"/>
+				<input type="password" placeholder="choose password" class="form"/>
+				<input type="password" placeholder="password confirm" class="form"/>
+				<p style="color: white; font-size: 12px;" style="position: relevant;"><input type="checkbox" style="border: 0px;" class="check"/>Sent me YouBike updates and lips</p>
+				<input type="submit" value="Create my Account" style=" color: white; background-color: #4ba7d8; border-radius: 5px;"/>
+			</form>
+			<div style="color: white;"> By clicking the button above, you agree to the Terms of Service Xiew our Privacy Police</div>
+		</div>
+		<footer style="height: 30px; display: block; position: absolute; margin-top: 50%">
+			
+		</footer>
+	</body>
+</html>
