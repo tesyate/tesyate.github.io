@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Homework #6</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-color: #ffffff;
+			}
+			header{
+				margin-top: 22px;
+				min-height: 55px;
+				height: 2%;
+			}
+			ul.headd > li {
+			    float: left;
+			    position: relative;
+			    text-decoration: none;
+			    color: white;
+			    list-style: none;
+			    font-size: 13px;
+			}
+			ul.headd {
+			    display: block;
+			    margin: 0;
+			    padding: 0;
+			    list-style: none;
+			}
+			ul.foot > li > a:hover {
+			    color:#4baeda;
+			}
+			ul.foot > li {
+			    float: left;
+			    position: relative;
+			    text-decoration: none;
+			    color: white;
+			    list-style: none;
+			    font-size: 13px;
+			}
+			ul.foot {
+			    display: block;
+			    margin: 0;
+			    padding: 0;
+			    list-style: none;
+			}
+			ul.foot > li > a {
+			    text-decoration-line: none;
+			    color: #828b8e;
+			    font-size: 14px;
+			    margin: 10px;
+			}
+			ul.menu{
+			    display: block;
+			    margin: 0;
+			    padding: 0;
+			    list-style: none;
+			}
+			ul.menu{
+				height:32px;
+				min-height: 32px;
+			}
+			ul.menu > li > a:hover {
+			    background: linear-gradient(to top, #0d3458, #1f6787);
+			    border-radius: 10px;
+			    color: white;
+			}
+			ul.menu > li > a {
+			    text-decoration-line: none;
+			    color: #828b8e;
+			    font-size: 20px;
+			}
+			ul.menu > li {
+				margin-top: 4px;
+				margin-left: 20px;
+			    float: left;
+			    position: relative;
+			    text-decoration: none;
+			    text-decoration-line: none;
+			    color: white;
+			    list-style: none;
+			    font-size: 13px;
+			}
+			.change{
+				min-height: 32px;
+				border: 1px solid #798683;
+				border-radius: 7px;
+				color: #114165;
+				float: left;
+				position: relative;
+				display: block;
+				box-shadow: 0 0 10px rgba(180,180,180,1.5);
+			}
+			.shape{
+				margin: 1px;
+				min-height: 30px;
+				width: 30px;
+				border-radius: 30px;
+				background-color: #114165;
+			}
+			.circle{
+				margin: 1px;
+				min-height: 15px;
+				width: 15px;
+				border-radius: 20px;
+				border: 7px solid  #114165;
+			}
+			.type{
+				margin-top: 10px;
+				min-height: 32px;
+				border: 1px solid #798683;
+				border-radius: 7px;
+				color: #114165;
+				float: left;
+				position: relative;
+				display: block;
+				width: 180px;
+			}
+			.typpe{
+				margin-top: 10px;
+				min-height: 32px;
+				border: 1px solid #798683;
+				border-radius: 7px;
+				color: #114165;
+				float: left;
+				position: relative;
+				display: block;
+				width: 170px;
+			}
+			.types{
+				color: #69777d;
+					
+			}
+			.types:hover{
+				color: #114165;
+				font-size: 18px;
+				text-decoration-line: underline;
+				text-decoration-style: initial;
+				
+			}
+			label{
+				color:#69777d;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<ul class="headd">
+			    <li>
+			    	<img src="img/phone.png" style="padding-left: 240px;"/>
+			    </li>
+			    <li style="background: linear-gradient(to top, #0e395e, #1f6685); border-radius: 3px; width: 497px; margin-left: 13px; box-shadow: 0 0 10px rgba(180,180,180,1.5); ">
+					 <form >
+					    <ul class="headd">
+					    	<li>
+					    		<img src="img/icon man.png" style="padding-left: 8px; margin-top: 4px"/>
+					    	</li>
+						    <li>
+					    		<input type="text" placeholder="login" class="form" style=" margin-left: 5px; margin-top: 3px; width: 113px"/>
+							</li>
+							<li>
+								<input type="password" placeholder="password" class="form" style="margin-left: 6px; margin-top: 3px; width: 113px"/>
+						    </li>
+						    <li>
+						    	<a href=# style="color: white; margin-left: 5px; margin-right: 5px; text-decoration-line: none;">вход</a>
+						    </li>
+						    <li>
+						    	|
+						    </li>
+						    <li>
+						    	<a href=# style="color: white; margin-left: 5px; text-decoration-line: none;">регистрация</a>
+						    </li>
+						    <li>
+						    	<a href=# style="color:#bebdc6; margin-left: 5px; padding-left: 10px; font-size: 14px;">забыли пароль?</a>
+						    </li>
+					    </ul>
+					</form>
+				</li>
+					<li style="margin-top: 3px; padding-left: 5px; margin-left: 15px; border-radius: 10px; border: 1px solid #bdc8c2; box-shadow: 0 0 10px rgba(180,180,180,1.5);">
+						<a href="#"><img src="img/home icon.png" style="padding-left: 5px;"/></a><a href="#"><img src="img/map icon.png" style="padding-left: 10px; padding-top: 2px;"/></a><a href="#"><img src="img/letter icon.png" style="padding-left: 10px; padding-right: 10px;"/></a>
+					</li>
+			    
+			</ul>
+		</header>		
+			<img src="img/banner.png" style="margin-left: 240px;"/>
+			<ul  style="margin-left: 221px;" class="menu">
+			    <li style="background: linear-gradient(to top, #010101, #506068); border-radius: 3px; width: 909px; box-shadow: 0 0 10px rgba(180,180,180,1.5);">
+				    <ul class="menu" style="margin-left: 90px;">
+				    	<li>
+				    		<a href=#>О компании</a>
+				    	</li>
+					    <li>
+				    		<a href=#>Оплата</a>
+						</li>
+						<li>
+				    		<a href=#>Доставка</a>
+						</li>
+					    <li>
+				    		<a href=#>Статьи</a>
+						</li>
+					    <li>
+				    		<a href=#>Контакты</a>
+						</li>
+					    <li>
+				    		<img src="img/shop icon.png"/>
+						</li>
+					    <li>
+				    		Товаров:
+						</li>
+						<li>
+				    		0
+						</li>
+						<li>
+				    		На сумму:
+						</li>
+						<li>
+				    		0,00 грн.
+						</li>
+				    </ul>
+				</li>
+			</ul>
+			<div style="float: left; margin-left: 240px; margin-top: 10px;">
+				<div class="change">
+					<div class="shape" style="float: left;">
+						<img src="img/icon list.png" style="height: 20px; margin-top: 5px; margin-left: 7px;"/> 
+					</div> 
+					<div style="float: right; margin-top: 7px;">КАТАЛОГ ПРОДУКЦИИ</div>
+					
+				</div>
+				<form>
+					<div class="type">
+						<div class="circle" style="float: left;"></div>
+						<div style="float: right; margin-top: 7px; padding-right: 90px;">ШИНЫ</div>
+					</div>
+					<ul type="circle" style="margin-left: 25px;">
+						<li class="types">наименование 1</li>
+						<li class="types">наименование 1</li>
+						<li class="types">наименование 1</li>
+						<li class="types">наименование 1</li>
+					</ul>
+				</form>
+				<form>
+					<div class="type">
+						<div class="circle" style="float: left;"></div>
+						<div style="float: right; margin-top: 7px; padding-right: 85px;">ДИСКИ</div>
+					</div>
+					<ul type="circle" style="margin-left: 25px;">
+						<li class="types">наименование 1</li>
+						<li class="types">наименование 1</li>
+						<li class="types">наименование 1</li>
+						<li class="types">наименование 1</li>
+					</ul>
+				</form>
+				<form>
+					<div class="type">
+						<div class="circle" style="float: left;"></div>
+						<div style="float: right; margin-top: 7px; padding-right: 85px;">БОЛТЫ</div>
+					</div>
+					<ul type="circle" style="margin-left: 25px;">
+						<li class="types">наименование 1</li>
+						<li class="types">наименование 1</li>
+						<li class="types">наименование 1</li>
+						<li class="types">наименование 1</li>
+					</ul>
+				</form>
+			</div>
+			<div style="float: left; background: linear-gradient(to top, #93a7b0, #e5e7e8); width: 505px; min-height: 700px; margin-left: 10px; margin-top: 10px;">
+				<div style="float: left; margin-left: 25px;">
+					<ul type="none" style="margin-top: 30px; margin-left: 20px;">
+						<li style="color: #114165; padding-left: 25px;">Good year</li>
+						<li>Ultra Crip Extreme</li>
+						<li style="width: 118px; border: 2px solid gray; border-radius: 10px; background-color: white;"><img src="img/bus 1.png" style="padding-left: 22px;"/></li>
+						<li style="color: #114165; padding-left: 35px;">90.00 грн.</li>
+					</ul>
+					<ul type="none" style="margin-top: 30px; margin-left: 20px;">
+						<li style="color: #114165; padding-left: 25px;">Good year</li>
+						<li>Ultra Crip Extreme</li>
+						<li style="width: 118px; border: 2px solid gray; border-radius: 10px; background-color: white;"><img src="img/bus 1.png" style="padding-left: 22px;"/></li>
+						<li style="color: #114165; padding-left: 35px;">90.00 грн.</li>
+					</ul>
+					<ul type="none" style="margin-top: 30px; margin-left: 20px;">
+						<li style="color: #114165; padding-left: 25px;">Good year</li>
+						<li>Ultra Crip Extreme</li>
+						<li style="width: 118px; border: 2px solid gray; border-radius: 10px; background-color: white;"><img src="img/bus 1.png" style="padding-left: 22px;"/></li>
+						<li style="color: #114165; padding-left: 35px;">90.00 грн.</li>
+					</ul>
+				</div>
+				<div style="float: left;">
+					<ul type="none" style="margin-top: 30px; margin-left: 20px;">
+						<li style="color: #114165; padding-left: 35px;">Nokian</li>
+						<li style="padding-left: 20px;">Hakkapelitta</li>
+						<li style="width: 118px; border: 2px solid gray; border-radius: 10px; background-color: white;"><img src="img/bus 2.png" style="padding-left: 26px;"/></li>
+						<li style="color: #114165; padding-left: 30px;">115.00 грн.</li>
+					</ul>
+					<ul type="none" style="margin-top: 30px; margin-left: 20px;">
+						<li style="color: #114165; padding-left: 35px;">Nokian</li>
+						<li style="padding-left: 20px;">Hakkapelitta</li>
+						<li style="width: 118px; border: 2px solid gray; border-radius: 10px; background-color: white;"><img src="img/bus 2.png" style="padding-left: 26px;"/></li>
+						<li style="color: #114165; padding-left: 30px;">115.00 грн.</li>
+					</ul>
+					<ul type="none" style="margin-top: 30px; margin-left: 20px;">
+						<li style="color: #114165; padding-left: 35px;">Nokian</li>
+						<li style="padding-left: 20px;">Hakkapelitta</li>
+						<li style="width: 118px; border: 2px solid gray; border-radius: 10px; background-color: white;"><img src="img/bus 2.png" style="padding-left: 26px;"/></li>
+						<li style="color: #114165; padding-left: 30px;">115.00 грн.</li>
+					</ul>
+				</div>
+				<div style="float: left;">
+					<ul type="none" style="margin-top: 30px; margin-left: 20px;">
+						<li style="color: #114165; padding-left: 30px;">Hankook</li>
+						<li>K 708 155/65 R14</li>
+						<li style="width: 118px; border: 2px solid gray; border-radius: 10px; background-color: white;"><img src="img/bus 3.png" style="padding-left: 22px;"/></li>
+						<li style="color: #114165; padding-left: 30px;">393.00 грн.</li>
+					</ul>
+					<ul type="none" style="margin-top: 30px; margin-left: 20px;">
+						<li style="color: #114165; padding-left: 30px;">Hankook</li>
+						<li>K 708 155/65 R14</li>
+						<li style="width: 118px; border: 2px solid gray; border-radius: 10px; background-color: white;"><img src="img/bus 3.png" style="padding-left: 22px;"/></li>
+						<li style="color: #114165; padding-left: 30px;">393.00 грн.</li>
+					</ul>
+					<ul type="none" style="margin-top: 30px; margin-left: 20px;">
+						<li style="color: #114165; padding-left: 30px;">Hankook</li>
+						<li>K 708 155/65 R14</li>
+						<li style="width: 118px; border: 2px solid gray; border-radius: 10px; background-color: white;"><img src="img/bus 3.png" style="padding-left: 22px;"/></li>
+						<li style="color: #114165; padding-left: 30px;">393.00 грн.</li>
+					</ul>
+				</div>
+			</div>
+			<div style="float: right; margin-right: 200px; margin-left: 10px; margin-top: 10px;">
+				<div class="change">
+					<div class="shape" style="float: left;">
+						<img src="img/icon list.png" style="height: 20px; margin-top: 5px; margin-left: 7px;"/> 
+					</div> 
+					<div style="float: right; margin-top: 7px; padding-right: 75px;">БРЕНДЫ</div>
+					
+				</div>
+				<form>
+					<div class="typpe">
+						<div class="circle" style="float: left;"></div>
+						<div style="float: right; margin-top: 7px; padding-right: 85px;">Шины</div>
+					</div>
+					<ul type="none" style="margin-left: 25px;">
+						<li class="types"><input type="checkbox" value=""/>  наименование 1</li>
+						<li class="types"><input type="checkbox" value=""/>  наименование 1</li>
+						<li class="types"><input type="checkbox" value=""/>  наименование 1</li>
+						<li class="types"><input type="checkbox" value=""/>  наименование 1</li>
+					</ul>
+					<div class="typpe">
+						<div class="circle" style="float: left;"></div>
+						<div style="float: right; margin-top: 7px; padding-right: 80px;">Диски</div>
+					</div>
+					<ul type="none" style="margin-left: 25px;">
+						<li class="types"><input type="checkbox" value=""/>  наименование 1</li>
+						<li class="types"><input type="checkbox" value=""/>  наименование 1</li>
+						<li class="types"><input type="checkbox" value=""/>  наименование 1</li>
+						<li class="types"><input type="checkbox" value=""/>  наименование 1</li>
+					</ul>
+					<input type="submit" value="Выбрать" style="background: linear-gradient(to top, #0d3458, #1f6787); color: white; border: none; border-radius: 5px; min-height: 30px; margin-left: 40px; width: 70px;"/>
+				</form>
+			</div>
+		<img src="img/brandlogo.png" style="margin-left: 360px;"/>
+		<footer style="min-height: 70px; display: block; background-color: #213a4d; width: 909px; margin-left: 240px;">
+			<ul class="foot" style="margin-left: 90px; padding-left: 220px;">
+				    	<li>
+				    		<a href=#>О компании</a>
+				    	</li>
+					    <li>
+				    		|
+						</li>
+						<li>
+				    		<a href=#>Доставка</a>
+						</li>
+						<li>
+				    		|
+						</li>
+					    <li>
+				    		<a href=#>Статьи</a>
+						</li>
+						<li>
+				    		|
+						</li>
+					    <li>
+				    		<a href=#>Контакты</a>
+						</li>
+				    </ul>
+		</footer>
+	</body>
+
