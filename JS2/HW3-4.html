@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Homework #3-4</title>
+		<style>
+			body{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			var test = new Object();
+			test.ques = function(b){
+				var a = document.createElement('div');
+				document.body.appendChild(a);
+				a.innerHTML = b;
+			}
+			test.ans = function(b){
+				var x = document.createElement('label');
+				var y = document.createElement('input');
+				y.type = "checkbox";
+				document.body.appendChild(y);
+				document.body.appendChild(x);
+				x.innerHTML = b;
+				document.write('<br/>');
+			};
+			test.btn = function(){
+				var y = document.createElement('input');
+				y.type = "submit";
+				document.body.appendChild(y);
+			};
+			test.ques('Тест по программированию');
+			test.ques('Вопрос 1');
+			test.ans("var 1");
+			test.ans("var 2");
+			test.ans("var 3");
+			test.ques('Вопрос 2');
+			test.ans("var 1");
+			test.ans("var 2");
+			test.ans("var 3");
+			test.ques('Вопрос 3');
+			test.ans("var 1");
+			test.ans("var 2");
+			test.ans("var 3");
+			test.btn();
+		</script>
+	</body>
+</html>
