@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Carousel and selector</title>
+        <link rel="stylesheet" type="text/css" href="Css/jcarousel.basic.css">
+        <link rel="stylesheet" type="text/css" media="all" href="css/jquery.selectbox.css" />
+		<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+		<script type="text/javascript" src="JS/jquery.jcarousel.min.js"></script>
+		<script type="text/javascript" src="JS/jcarousel.basic.js"></script>
+		<script type="text/javascript" src="js/jquery.selectbox-0.6.1.js"></script>
+		<script type="text/javascript" src="JS/jquery.animate-colors.js"></script>
+		<script src="//cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
+		<style>
+			.niceCheck {
+				width: 17px;
+				height: 17px;
+				display: inline-block;
+				cursor: pointer;
+				background: url('Img/checkbox-sprite.png');
+			}
+			.niceCheck input {
+				display: none;
+				margin-left: 30px;
+			}
+			.diver{
+				margin: 20px;
+			}
+			.inn[type=checkbox] {
+				position: absolute;
+				clip: rect(0, 0, 0, 0);
+			}
+			.labbl{
+				cursor: pointer;
+			}
+			.labbl:after {
+				content: ' ';
+				display: inline-block;
+				width: 17px;
+				height: 17px;
+				background: url(Img/checkbox-sprite.png);
+				position: relative;
+				top: 3px;
+				margin-left: 15px;
+			}
+			.inn[type=checkbox]:checked + .labbl:after {
+			background-position: 0 -17px;
+			}
+			.inn[type=checkbox]:checked{
+			background-position: 0 -34px;
+			}
+			
+			
+			ul {
+			    display: block;
+			    margin: 0;
+			    padding: 0;
+			    list-style: none;
+			}
+			ul:after {
+			    display: block;
+			    content: ' ';
+			    clear: both;
+			    float: none;
+			}
+			ul.menu > li {
+				margin-left: 5%;
+			    float: left;
+			    position: relative;
+			    width: 150px;
+			}
+			ul.menu > li > a {
+			    display: block;
+			    padding: 10px;
+			    color: white;
+			    background-color: #4f4f4f;
+			    text-decoration: none;
+			}
+			ul.menu > li > a:hover {
+			    background-color: black;
+			}
+			.subsubmenu{
+				display: none;
+				position: absolute;
+				margin-left: -150px;
+				margin-top: -25px;
+			}
+			.submenu{
+				display: none;
+				position: absolute;
+			}
+			.submenu>li{
+				height: 50px;
+				width: 150px;
+				background-color: #6f6d92;
+			}
+			.submenu>li>a{
+				text-decoration: none;
+				padding-top: 5px;
+				padding-left: 20px;
+				font-size: 20px;
+				color: white;
+			}
+			.subsubmenu>li{
+				height: 50px;
+				width: 150px;
+				background-color: blue;
+			}
+			.subsubmenu>li>a{
+				text-decoration: none;
+				padding-top: 5px;
+				padding-left: 20px;
+				font-size: 20px;
+				color: black;
+				z-index: 1;
+			}
+		</style>
+		
+	</head>
+	<body>
+	
+	<ul class="menu">
+	    <li><a href=#>Nav1</a></li>
+	    <li id="suub"><a href=#>Nav2</a>
+	        <ul class="submenu">
+	            <li class="submenu__li"><a href=#>2.1</a></li>
+	            <li class="submenu__li" id='ssub'><a href=#>2.2</a>
+	            	<ul class="subsubmenu">
+			            <li class="subsubmenu__li"><a href=#>2.2.1</a></li>
+			            <li class="subsubmenu__li"><a href=#>2.2.2</a></li>
+			            <li class="subsubmenu__li"><a href=#>2.2.3</a></li>
+			        </ul>
+			        
+	            </li>
+	            <li class="submenu__li"><a href=#>2.3</a></li>
+	        </ul>
+	    </li>
+	    <li><a href=#>Nav3</a></li>
+	    <li><a href=#>Nav4</a></li>
+	    <li><a href=#>Nav5</a></li>
+	</ul>
+	
+	<script>
+		$(function(){
+			$('#suub').hover(
+			function(){
+				$('.submenu').slideDown(1000);
+				$('.submenu__li').animate({backgroundColor: '#400101'},1000);
+			},
+			function(){
+				$('.submenu').slideUp(1000);
+				$('.submenu__li').animate({backgroundColor: '#6f6d92'},1000);
+			});
+			$('#ssub').hover(
+			function(){
+				$('.subsubmenu').slideDown(1000);
+				$('.subsubmenu__li').animate({backgroundColor: '#02fdfd'});
+			},
+			function(){
+				$('.subsubmenu').slideUp(1000);
+				$('.subsubmenu__li').animate({backgroundColor: 'blue'});
+			});
+			$('.submenu__li').hover(
+			function(){
+				$(this).css('background-color', 'black');
+			},
+			function(){
+				$(this).css('background-color', '#400101');
+			});
+			$('.subsubmenu__li').hover(
+			function(){
+				$(this).css('background-color', 'white');
+			},
+			function(){
+				$(this).css('background-color', '#02fdfd');
+			});
+		})
+	</script>
+	
+	
+	
+	
+		<div class="wrapper">
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="Img/step1.png" width="400" height="250" alt=""></li>
+                        <li><img src="Img/step2.png" width="400" height="250" alt=""></li>
+                        <li><img src="Img/step3.png" width="400" height="250" alt=""></li>
+                        <li><img src="Img/step4.png" width="400" height="250" alt=""></li>
+                    </ul>
+                </div>
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                
+                <p class="jcarousel-pagination">
+                    
+                </p>
+            </div>
+        </div>
+       
+       
+       <div id="wraper">
+					<div class="demoTarget">
+						<select id="default-usage-select">
+							<option value="--">Please select your favorite color</option>
+							<option value="01">Red</option>
+							<option value="02">Orange</option>
+							<option value="03">Yellow</option>
+							<option value="04">Green</option>
+							<option value="05">Blue</option>
+							<option value="06">Magenta</option>
+							<option value="07">Violet</option>
+							<option value="08">Ultra-violet</option>
+						</select>
+						<div class="clr"></div>
+					</div>
+    	</div>
+    	<br /><br />
+    	
+    	
+    	
+    	<h1>JQuery</h1>
+    	<div>
+			<label>Label1</label><span class="niceCheck" onclick="changeCheck(this)" id="niceCheckbox1"><input type="checkbox" name="ch1"  /></span>
+		</div>
+		<div>
+			<label>Label2</label><span class="niceCheck" onclick="changeCheck(this)" id="niceCheckbox2"><input type="checkbox" name="ch1"  /></span>
+		</div>
+		<div>
+			<label>Label3</label><span class="niceCheck" onclick="changeCheck(this)" id="niceCheckbox3"><input type="checkbox" name="ch1"  /></span>
+		</div>
+		<br /><br />
+		
+		
+		<h1>CSS</h1>
+		<div class="diver">
+			<input class="inn" type="checkbox" id="test-check1" />
+			<label class="labbl" for="test-check1">Чекбокс 1:</label>	
+		</div>
+		<div class="diver">
+			<input class="inn" type="checkbox" id="test-check2" />
+			<label class="labbl" for="test-check2">Чекбокс 2:</label>	
+		</div>
+		<div class="diver">
+			<input class="inn" type="checkbox" id="test-check3" />
+			<label class="labbl" for="test-check3">Чекбокс 3:</label>	
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript">
+			function changeCheck(el){
+			     var el = el,
+			        input = el.getElementsByTagName("input")[0];
+			     if(input.checked)		     {
+			         el.style.backgroundPosition="0 0"; 
+			         input.checked=false;
+			     }else{
+			          el.style.backgroundPosition="0 -17px"; 
+			          input.checked=true;
+			     }
+			     return true;
+			}
+			function startChangeCheck(el){
+			    var el = el,
+			    input = el.getElementsByTagName("input")[0];
+			    if(input.checked){
+			        el.style.backgroundPosition="0 -17px"; 
+			    }
+			    return true;
+			}
+			function startCheck(){
+			    startChangeCheck(document.getElementById("niceCheckbox1"));
+			}
+			window.onload=startCheck;
+		</script>
+		
+		
+		<script type="text/javascript">
+		//<![CDATA[
+			$("#default-usage-select").selectbox().bind('change', function(){
+				$('<div>Value of #default-usage-select changed to: '+$(this).val()+'</div>').appendTo('#demo-default-usage .demoTarget').fadeOut(5000, function(){
+					$(this).remove();
+				});
+			});
+		//]]>
+		</script>
+	</body>
+</html>
