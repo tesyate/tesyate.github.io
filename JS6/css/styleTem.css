@@ -1,0 +1,13 @@
+body{
+	text-align: center;
+}
+li{
+    border-bottom: 1px dotted #CCCCCC;
+    list-style: none;
+}
+li.odd{
+    background: #FFFFEE;    
+}
+li.even{
+    background: #FFFFCC;
+}
