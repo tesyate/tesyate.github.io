@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Homework #3-4</title>
+		<style>
+			body{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+		var test = {
+		  data: {
+		    title: 'Тест по какой-то теме',
+		    questions: [
+		      {
+		        title: 'Вопрос #1',
+		        answers: ['Вариант овтета 1', 'Вариант овтета 2', 'Вариант овтета 3']
+		      },
+		      {
+		        title: 'Вопрос #2',
+		        answers: ['Вариант овтета 1', 'Вариант овтета 2', 'Вариант овтета 3', 'Вариант овтета 4']
+		      },
+		      {
+		        title: 'Вопрос #3',
+		        answers: ['Вариант овтета 1', 'Вариант овтета 2']
+		      }
+		    ]
+		  }
+		};
+		console.log(test.data.questions.length);
+		function Title(b){
+				var a = document.createElement('div');
+				document.body.appendChild(a);
+				a.innerHTML = b;
+		};
+		function Variable(b){
+				var x = document.createElement('label');
+				var y = document.createElement('input');
+				y.type = "checkbox";
+				document.body.appendChild(y);
+				document.body.appendChild(x);
+				x.innerHTML = b;
+				document.write('<br/>');
+		};
+		Title(test.data.title);
+		for(var i=0; i<test.data.questions.length; i++){
+			Title(test.data.questions[i].title);
+			for (var j=0; j<test.data.questions[i].answers.length; j++){
+				Variable(test.data.questions[i].answers[j]);
+			};	
+		};
+		var y = document.createElement('input');
+		y.type = "submit";
+		document.body.appendChild(y);
+		</script>
+	</body>
+</html>
