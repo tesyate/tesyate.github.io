@@ -1,4 +1,18 @@
 @import 'variables';
+@font-face {
+      font-family: Ubuntu Light;
+      src: local("Ubuntu Light"), 
+           url(fonts/3972.ttf); 
+      font-weight: normal;
+	  font-style: normal;
+};
+@font-face {
+      font-family: Ubuntu Medium;
+      src: local("Ubuntu Medium"), 
+           url(fonts/3974.ttf); 
+      font-weight: normal;
+	  font-style: normal;
+};
 *{
 	margin: 0;
 	padding: 0;
@@ -46,11 +60,12 @@ body{
     padding-top: 15px;
 }
 .header__ul__li__a:hover{
-	color: yellow; 
+	color: #f4b60d;
 }
 .header__ul__li__a{
     text-decoration-line: none;
     color: white;
+    font-family: Ubuntu Light;
 }
 .header__ul{
     list-style: none;
@@ -215,26 +230,33 @@ body{
 	background: url('../img/arrows.png') -11px 0 no-repeat;
 	height: 9px;
 	width: 10px;
-	margin-left: 15px;
 	margin-top: 5px;
 	float: right;
+	margin-right: 120px;
+}
+.readms{
+	margin-left: 15px;
 }
 .readms:hover > .readm {
-	color: $color_blue;
+	color: #66a7f0;
 }
 .readms:hover > .arrows {
 	background-position: 0px 0px;
 }
 a.readm{
 	color: black;
-	float: right;
+	float: left;
 	text-decoration: none;
+	font-family: Ubuntu Medium;
 }	
 .content__about{
 	margin-left: 15px;
+	font-family: Arial;
+	color: grey;
 }
 h2{
 	margin-left: 15px;
+	font-family: Ubuntu Medium;
 }
 .content__serv{
 	margin-top: 25px;
@@ -251,13 +273,14 @@ h2{
 	background-color: blue;
 	position: absolute;
 	margin-top: -264px;
-	width: $param_box;
+	width: $wid_box;
 	height: $param_box;
 	z-index: 0;
 	opacity: 0;
+	padding-top: 65px;
 }
 .content__blue:hover{
-	opacity: 0.5;
+	opacity: 0.8;
 }
 .content__serv:hover > h2{
 	color: $color_orange;
@@ -280,9 +303,10 @@ h2{
 	font-size: 14px;
 	padding-top: 13px;
 	text-align: center;
+	font-family: Ubuntu Medium;
 }
 .month{
-	background-color: $color_blue;
+	background-color: $color_bblue;
 	color: white;
 	margin-top: 10px;
 }
@@ -291,18 +315,20 @@ h2{
 	margin-top: 50px;
 }
 .news__author{
-	color: $color_blue;
+	color: $color_bblue;
 }
 .news__text{
 	padding-left: 50px;
 	color: grey;
+	font-family: Arial;
 }
 .news__link{
 	text-decoration-line: none;
 	color: black;
+	font-family: Ubuntu Medium;
 }
 .news__link:hover{
-	color: $color_blue;
+	color: $color_bblue;
 }
 .orangeBox{
 	background-color: $color_orange;
@@ -321,45 +347,57 @@ h2{
 	color: white;
 	padding-top: 7px;
 	padding-left: 20px;
+	font-family: Ubuntu Medium;
 }
 .whiteBox{
+	background-color: white;
 	border: 1px solid grey;
 	width: $width_box;
 	height: 33px;
 	text-align: center;
 	color: black;
 	float: left;
+	font-size: 22px;
 	padding-top: 7px;
 }
 .whiteLine{
+	background-color: white;
 	border: 1px solid grey;
 	width: $width_line;
 	height: 33px;
 	color: black;
 	padding-top: 7px;
 	padding-left: 20px;
+	font-family: Ubuntu Medium;
 }
 .logos{
 	margin-top: 200px;
 }
 .footer{
-	margin-top: 150px;
+	margin-top: 120px;
 }
 h3{
 	color: white;
+	font-family: Ubuntu Medium;
+	margin-bottom: 30px;
+}
+.link_first{
+	padding-top: 30px;
 }
 .linnks{
 	float: left;
 	width: $width_links;
 	margin-left: 40px;
 	color: grey;
+	
 }
 .links__foot{
 	text-decoration: none;
-	color: grey;	
+	color: grey;
+	font-family: Arial;	
 }
 .links__foot:hover{
-	color: $color_blue;
+	color: $color_bblue;
 }
 hr{
 	margin-top: 10px;
