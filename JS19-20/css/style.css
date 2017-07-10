@@ -46,13 +46,12 @@ body {
   position: relative;
   color: white;
   list-style: none;
-  font-size: 20px;
   border-right: 1px solid black;
   height: 35px;
   z-index: 1;
   width: 130px;
   text-align: center;
-  padding-top: 15px; }
+  padding-top: 17px; }
 
 .header__ul__li__a:hover {
   color: #f4b60d; }
@@ -60,40 +59,44 @@ body {
 .header__ul__li__a {
   text-decoration-line: none;
   color: white;
-  font-family: Ubuntu Light; }
+  font-family: Ubuntu Light;
+  font-size: 10px; }
 
 .header__ul {
   list-style: none;
   float: right;
   position: absolute;
-  background-color: #425050;
+  background-color: #2a2d31;
   width: 100%; }
 
 .search {
   background-color: #35383c;
   border: 0px;
   height: 10px;
-  font-size: 10px;
+  font-size: 9px;
   padding-left: 5px;
-  margin-top: -15px; }
+  color: #626466; }
 
 .searchDiv {
   background-color: #35383c;
   float: right;
-  margin-top: 9px;
+  margin-top: 7px;
   margin-right: 10px;
   height: 32px;
+  width: 240px;
   border-radius: 2px;
   border: 1px solid black;
   position: absolute;
   z-index: 2;
-  right: 10px; }
+  right: 10px;
+  padding-top: 5px; }
 
 .search_img {
   height: 14px;
-  margin-top: 10px;
+  margin-top: 5px;
   opacity: 0.2;
-  margin-right: 5px; }
+  margin-right: 5px;
+  float: right; }
 
 .iconn {
   position: absolute;
@@ -170,7 +173,8 @@ body {
 
 .content__its {
   position: absolute;
-  z-index: 2; }
+  z-index: 2;
+  margin-top: 25px; }
 
 .content__text {
   float: left;
@@ -216,9 +220,9 @@ body {
   background: url("../img/arrows.png") -11px 0 no-repeat;
   height: 9px;
   width: 10px;
-  margin-top: 5px;
+  margin-top: 29px;
   float: right;
-  margin-right: 120px; }
+  margin-right: 153px; }
 
 .readms {
   margin-left: 15px; }
@@ -233,16 +237,22 @@ a.readm {
   color: black;
   float: left;
   text-decoration: none;
-  font-family: Ubuntu Medium; }
+  font-family: Ubuntu Medium;
+  font-size: 10px;
+  margin-top: 26px; }
 
 .content__about {
   margin-left: 15px;
   font-family: Arial;
-  color: grey; }
+  color: grey;
+  font-size: 10px;
+  margin-top: 28px; }
 
 h2 {
   margin-left: 15px;
-  font-family: Ubuntu Medium; }
+  font-family: Ubuntu Medium;
+  font-size: 14px;
+  margin-top: 18px; }
 
 .content__serv {
   margin-top: 25px;
@@ -306,12 +316,14 @@ h2 {
 .news__text {
   padding-left: 50px;
   color: grey;
-  font-family: Arial; }
+  font-family: Arial;
+  font-size: 10px; }
 
 .news__link {
   text-decoration-line: none;
   color: black;
-  font-family: Ubuntu Medium; }
+  font-family: Ubuntu Medium;
+  font-size: 12px; }
 
 .news__link:hover {
   color: #248cec; }
@@ -324,16 +336,19 @@ h2 {
   text-align: center;
   color: white;
   float: left;
-  padding-top: 7px; }
+  padding-top: 7px;
+  margin-top: 45px; }
 
 .orangeLine {
   background-color: #f4b609;
   width: 499px;
-  height: 33px;
+  height: 27px;
   color: white;
-  padding-top: 7px;
+  padding-top: 13px;
   padding-left: 20px;
-  font-family: Ubuntu Medium; }
+  font-family: Ubuntu Medium;
+  margin-top: 45px;
+  font-size: 10px; }
 
 .whiteBox {
   background-color: white;
@@ -350,22 +365,18 @@ h2 {
   background-color: white;
   border: 1px solid grey;
   width: 499px;
-  height: 33px;
+  height: 27px;
   color: black;
-  padding-top: 7px;
+  padding-top: 13px;
   padding-left: 20px;
-  font-family: Ubuntu Medium; }
+  font-family: Ubuntu Medium;
+  font-size: 10px; }
 
 .logos {
-  margin-top: 200px; }
+  margin-top: 180px; }
 
 .footer {
-  margin-top: 120px; }
-
-h3 {
-  color: white;
-  font-family: Ubuntu Medium;
-  margin-bottom: 30px; }
+  margin-top: 140px; }
 
 .link_first {
   padding-top: 30px; }
@@ -379,17 +390,18 @@ h3 {
 .links__foot {
   text-decoration: none;
   color: grey;
-  font-family: Arial; }
+  font-family: Arial;
+  font-size: 10px; }
 
 .links__foot:hover {
   color: #248cec; }
 
 hr {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-top: 4px;
+  margin-bottom: 4px; }
 
 .bottom {
-  margin-top: 100px;
+  margin-top: 90px;
   margin-bottom: 15px; }
 
 /*# sourceMappingURL=style.css.map */
