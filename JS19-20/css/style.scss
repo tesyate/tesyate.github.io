@@ -274,6 +274,7 @@ $fontBase: Arial, sans-serif;
       background: #2889e4 url("../img/plus.png") center no-repeat;
     }
     &__text {
+      font-family: $fontUbuntu;
       font-size: 16px;
       padding-top: 36px;
       text-align: center;

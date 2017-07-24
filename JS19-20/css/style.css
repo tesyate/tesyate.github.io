@@ -197,6 +197,7 @@
     .service-info__check {
       background: #2889e4 url("../img/plus.png") center no-repeat; }
     .service-info__text {
+      font-family: "Ubuntu", sans-serif;
       font-size: 16px;
       padding-top: 36px;
       text-align: center; }
