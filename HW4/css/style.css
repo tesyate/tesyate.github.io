@@ -1,0 +1,192 @@
+body {
+    font: 14px 'Tahoma';
+    background: url("../img/background.png") repeat-x;
+}
+
+.main {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 1px 20px;
+}
+
+/*HEADER*/
+
+.logo {
+    color: #128aa7;
+    float: left;
+    margin-left: 40px;
+    position: relative;
+}
+
+.logo p {
+    font-size: 12px;
+    position: absolute;
+    top: 100px;
+    left: 70px;
+}
+
+.box {
+    float: right;
+    color: #128aa7;
+}
+
+.contacts {
+    padding: 9% 2% 2% 50%
+}
+
+.country {
+    font-size: 10px;
+}
+
+.country li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.country div,
+.country a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.india {
+    width: 42px;
+    height: 42px;
+    background: url("../img/flags.png") 0 0 no-repeat;
+}
+
+.nepal {
+    width: 42px;
+    height: 42px;
+    background: url("../img/flags.png") -42px 0 no-repeat;
+}
+
+.tailand {
+    width: 42px;
+    height: 42px;
+    background: url("../img/flags.png") -84px 0 no-repeat;
+}
+
+.butan {
+    width: 42px;
+    height: 42px;
+    background: url("../img/flags.png") -126px 0 no-repeat;
+}
+
+.shri {
+    width: 42px;
+    height: 42px;
+    background: url("../img/flags.png") -168px 0 no-repeat;
+}
+
+.maldivs {
+    width: 42px;
+    height: 42px;
+    background: url("../img/flags.png") -210px 0 no-repeat;
+}
+
+.country a:visited {
+    color: #128aa7;
+}
+
+.picture {
+    box-shadow: inset 0 -5px 0 #006699;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/*MENU*/
+
+.menu_cont ul {
+    display: block;
+    background-color: #323232;
+    padding-left: 6%;
+}
+
+.menu_cont ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+}
+
+.menu_cont ul.menu > li {
+    float: left;
+    position: relative;
+    padding-right: 4.5%;
+}
+
+.menu_cont ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu_cont ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    padding: 0;
+}
+
+.menu_cont ul.submenu > li {
+    display: block;
+}
+
+.menu_cont ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu_cont ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+/*CONTENT*/
+
+h2 {
+    font-weight: 700;
+}
+
+.flex {
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    min-height: 550px;
+}
+
+.leftside,
+.centerside,
+.rightside {
+    padding: 10px;
+    line-height: 1.5;
+}
+
+.leftside,
+.rightside {
+    width: 20%;
+    background-color: #edeef0;
+}
+
+.centerside {
+    width: 60%;
+    border: 1px solid #c7cacf;
+}
+
+/*Footer*/
+
+.foot {
+    color: #fff;
+    text-align: center;
+}

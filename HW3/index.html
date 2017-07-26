@@ -1,92 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<title>Homework #3</title>
-		<style type="text/css">
-			*{
-				margin: 0;
-				padding: 0;
-			}
-			.menu{
-				background-color: #4f4f4f;
-				height: 40px;
-				font-size: 26px;
-				color: #ffffff;
-				width: 15%;
-				
-			}
-			input{
-				margin-top: 0.5%;
-			}
-			footer{
-				position: absolute;
-				margin-top: 30%;
-				width: 90%;
-				min-height: 5%;
-				height: 1px;
-				background-color: #e1e1e1;
-				margin-left: 5%;
-			}
-			.foot{
-				height: 25px;
-				padding-left: 2%;
-				width: 10%;
-			}
-			a:active{
-				border-bottom: 1px dashed red; 
-			}
-			article, aside{
-				height:400px;
-				box-sizing: border-box;
-				margin-top: 20px;
-				float: left;
-			}
-
-			article{
-				width: 20%;
-				margin-left: 5%;
-				margin-right:15%;
-			}
-			aside{
-				width: 60%;
-			}
-		</style>
+	    <meta charset="UTF-8">
+	    <title>Fitness</title>
+	    <link rel="stylesheet" href="css/Reset.css">
+	    <link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<img style="margin-left: 5%" src="Img/logo.png"/>
-		<header style="height: 50px; background-color: #4f4f4f; width: 90%; margin-left: 5%; min-height: 10%;">
-			<div style="height: 40px; width: 100%; margin-left: 1%; ">
-				<a style="width: 15%; font-size: 28px;"><input type="button" class="menu" value="Главная"/></a>
-				<a style="width: 15%; font-size: 28px; margin-left: 1%;"><input type="button" class="menu" value="Товары"/></a>
-				<a style="width: 15%; font-size: 28px; margin-left: 1%;"><input type="button" class="menu" value="О нас"/></a>
-				<a style="width: 15%; font-size: 28px; margin-left: 1%;"><input type="button" class="menu" value="Контакты"/></a>
-			</div>
-			
-		</header>
-		<article style="margin-left: 5%">
-				<div style="min-height: 5%; background-color: #a5855a;  margin-top: 1%; font-size: 20px; text-align: center;"><a>Ноутбуки</a></div>
-				<div style="min-height: 5%; background-color: #a5855a;  margin-top: 1%; font-size: 20px; text-align: center;"><a>Планшеты</a></div>
-				<div style="min-height: 5%; background-color: #a5855a; margin-top: 1%; font-size: 20px; text-align: center;"><a>Телефоны</a></div>
-				<div style="min-height: 5%; background-color: #a5855a; margin-top: 1%; font-size: 20px; text-align: center;"><a>Телевизоры</a></div>
-				<div style="min-height: 5%; background-color: #a5855a; margin-top: 1%; font-size: 20px; text-align: center;"><a>Бытовая техника</a></div>
-				<div style="min-height: 5%; background-color: #a5855a; margin-top: 1%; font-size: 20px; text-align: center;"><a>Автотовары</a></div>
-		</article>
-		<aside>
-			<img src="Img/img.png"/>
-			<div style="width: 60%">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</div>
-		</aside>
-		
-		
-		<footer>
-			<a class="foot">Главная </a>
-			<a class="foot">Товары</a>
-			<a class="foot">О нас</a>
-			<a class="foot">Контакты</a>
-			<a class="foot" style="margin-left: 50%;">2014 &#169; All Rights Reserved</a>
-		</footer>
-		
+	    <div class="wrapper">
+	        <header>
+	            <div class="logo">
+	                <a href="#"><img src="img/head.png"/></a>
+	            </div>
+	        </header>
+	    <div class="menu">
+	        <ul>
+	            <li> <a href="#">Главная</a></li>
+	            <li><a href="#">Товары</a></li>
+	            <li><a href="#">О нас</a></li>
+	            <li><a href="#">Контакты</a></li>
+	        </ul>
+	    </div>
+	    <div class="content">
+	        <div class="left-side">
+	            <ul>
+	                <li><a href="#">Ноутбуки</a></li>
+	                <li><a href="#">Планшеты</a></li>
+	                <li><a href="#">Телефоны</a></li>
+	                <li><a href="#">Телевизоры</a></li>
+	                <li><a href="#">Бытовая техника</a></li>
+	                <li><a href="#">Автотовары</a></li>
+	            </ul>
+	        </div>
+	        <div class="rigth-side">
+	            <img src="img/byke.png">
+	            <p>Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично,
+	                стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній
+	                підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному
+	                верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки
+	                виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам
+	                комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.
+	            </p>
+	            
+	        </div>
+	        <div class="clear"> </div>
+	    </div>
+	    <footer>
+	        <ul class="foot">
+	            <li><a href="#">Главная</a></li>
+	            <li><a href="#">Товары</a></li>
+	            <li><a href="#">О нас</a></li>
+	            <li><a href="#">Контакты</a></li>
+	            <li>2014 &copy All rights reserved</li>
+	        </ul>
+	    </footer>
+	    </div>
 	</body>
 </html>

@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Open Sans";
+    url(font/OpenSans-Regular.ttf);
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+    font-family: "Open Sans";
+}
+
+.logo {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Menu */
+
+.menu {
+    width: 100%;
+    background-color: #5c5c5c;
+}
+
+.menu a {
+    padding: 15px 35px;
+    text-align: left;
+    display: block;
+    color: #e7e6e6;
+}
+.menu a:hover {
+    background-color: #3f3f3f;
+    border-left: 1px solid #a7a6a6;
+    border-right: 1px solid #a7a6a6;
+    padding: 15px 34px;
+}
+
+/* Left-side */
+
+.left-side {
+    width: 245px;
+    margin-top: 20px;
+    float: left;
+}
+
+.left-side li {
+    width: 200px;
+    color: #656363;
+    border: 1px solid #a7a6a6;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.left-side a {
+    color: #656363;
+}
+
+.left-side a:hover {
+    padding-left: 25px;
+    width: 205px;
+    color: #000;
+}
+/*Right-side*/
+
+.rigth-side {
+    width: 590px;
+    margin: 20px auto;
+    float: right;
+}
+
+.rigth-side img {
+    padding: 45px;
+     border: 1px solid #a7a6a6;
+}
+
+p {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*Content*/
+
+.clear{
+    clear:both;
+}
+
+/*Footer*/
+
+footer {
+    color: black;
+    background-color: #e1e1e1;
+}
+
+.foot li {
+    padding: 10px 35px;
+    text-align: left;
+}
+
+.foot a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.foot li:nth-child(5) {
+    float: right;
+}
