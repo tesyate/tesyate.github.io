@@ -50,14 +50,14 @@ a {
     width: 240px;
     margin-top: 20px;
     float: left;
-    border-left: 1px solid #a7a6a6;
-    border-top: 1px solid #a7a6a6;
+    border: 1px solid #a7a6a6;
 }
 
 .left-side li {
-    width: 240px;
+    width: 220px;
     color: #656363;
     padding: 10px;
+    border-bottom: 1px solid #a7a6a6;
 }
 
 .left-side li:hover {
@@ -84,14 +84,15 @@ a {
 
 .rigth-side img {
     padding: 45px;
-    border-left: 1px solid #a7a6a6;
-    border-top: 1px solid #a7a6a6;
+    border: 1px solid #a7a6a6;
 }
  
 p {
     margin-top: 40px;
     margin-bottom: 40px;
     font-size: 13.33px;
+    line-height: 1.5;
+    letter-spacing: 1.2;
 }
 
 /*Content*/
