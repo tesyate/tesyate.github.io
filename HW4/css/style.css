@@ -1,6 +1,6 @@
 body {
     font: 14px 'Tahoma';
-    background: url("../img/background.png") repeat-x;
+    background: url("../Img/background.png") repeat-x;
 }
 
 .main {
@@ -54,37 +54,37 @@ body {
 .india {
     width: 42px;
     height: 42px;
-    background: url("../img/flags.png") 0 0 no-repeat;
+    background: url("../Img/flags.png") 0 0 no-repeat;
 }
 
 .nepal {
     width: 42px;
     height: 42px;
-    background: url("../img/flags.png") -42px 0 no-repeat;
+    background: url("../Img/flags.png") -42px 0 no-repeat;
 }
 
 .tailand {
     width: 42px;
     height: 42px;
-    background: url("../img/flags.png") -84px 0 no-repeat;
+    background: url("../Img/flags.png") -84px 0 no-repeat;
 }
 
 .butan {
     width: 42px;
     height: 42px;
-    background: url("../img/flags.png") -126px 0 no-repeat;
+    background: url("../Img/flags.png") -126px 0 no-repeat;
 }
 
 .shri {
     width: 42px;
     height: 42px;
-    background: url("../img/flags.png") -168px 0 no-repeat;
+    background: url("../Img/flags.png") -168px 0 no-repeat;
 }
 
 .maldivs {
     width: 42px;
     height: 42px;
-    background: url("../img/flags.png") -210px 0 no-repeat;
+    background: url("../Img/flags.png") -210px 0 no-repeat;
 }
 
 .country a:visited {
