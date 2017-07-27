@@ -105,6 +105,9 @@ body {
     display: block;
     background-color: #323232;
     padding-left: 6%;
+    box-shadow: 0 4px 1px -1px rgba(0, 0, 0, .9);
+    border-bottom: 1px solid black;
+    z-index: 2;
 }
 
 .menu_cont ul:after {
@@ -124,6 +127,7 @@ body {
     padding: 10px;
     color: #ffffff;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .menu_cont ul.submenu {
@@ -133,6 +137,8 @@ body {
     top: 37px;
     left: 0;
     padding: 0;
+    box-shadow: 0 6px 2px -2px rgba(0, 0, 0, .5);
+    border-top: 1px solid black;
 }
 
 .menu_cont ul.submenu > li {
@@ -178,11 +184,13 @@ h2 {
 .rightside {
     width: 20%;
     background-color: #edeef0;
+    margin-top: 4px;
 }
 
 .centerside {
     width: 60%;
     border: 1px solid #c7cacf;
+    margin-top: 4px;
 }
 
 /*Footer*/
