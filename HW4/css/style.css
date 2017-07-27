@@ -164,6 +164,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     min-height: 550px;
+    color: #424c43;
 }
 
 .leftside,
