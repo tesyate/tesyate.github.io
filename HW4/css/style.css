@@ -173,6 +173,9 @@ h2 {
     color: #424c43;
 }
 
+.info{
+	text-align: center;
+}
 .leftside,
 .centerside,
 .rightside {
