@@ -25,7 +25,8 @@
   }
 
   .about-us__content {
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
 
   .about-us__third-heading {

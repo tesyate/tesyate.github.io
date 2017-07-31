@@ -363,6 +363,7 @@ h3 {
 .testimonials__third-heading {
   color: #454545;
   display: inline-block;
+  text-shadow: none;
 }
 
 .testimonials__third-heading_colored {
@@ -420,6 +421,7 @@ h3 {
 .testimonials__right-block h3 {
   margin: 20px 0;
   font-weight: lighter;
+  text-shadow: none;
 }
 
 .testimonials__article {
@@ -522,6 +524,7 @@ h3 {
   color: #454545;
   font-size: 48px;
   font-weight: lighter;
+  text-shadow: none;
 }
 
 .news__left-column .news__first-heading_colored {
