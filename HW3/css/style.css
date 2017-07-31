@@ -41,6 +41,7 @@ body {
     text-align: center;
     list-style-type: none;
     padding-left: 10px;
+    height: 40px;
 }
 
 .header-menu a {
@@ -52,12 +53,14 @@ body {
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     padding: 0 30px;
+    height: 38px;
 }
-
+ 
 .header-menu a:hover {
     background: linear-gradient(0deg, #2e2e2e 0%, #4a4a4a 100%);
     border-right: 1px solid #838383;
     border-left: 1px solid #838383;
+    
     padding: 0 29px;
 }
 /*Контент*/
