@@ -1,204 +1,203 @@
+@font-face {
+    font-family: Tahoma;
+    src: url(../fonts/tahoma.ttf);
+}
+
 body {
-    font: 14px 'Tahoma';
-    background: url("../Img/background.png") repeat-x;
-}
-
-.main {
-    width: 1000px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    box-shadow: 0 1px 20px;
-}
-
-/*HEADER*/
-
-.logo {
-    color: #128aa7;
-    float: left;
-    margin-left: 40px;
-    position: relative;
-}
-
-.logo p {
-    font-size: 12px;
-    position: absolute;
-    top: 100px;
-    left: 70px;
+    background: url(../img/bg1px.jpg);
+    background-repeat: repeat-x;
 }
 
 .box {
+    margin: 0 auto;
+    width: 1000px;
+    background: #ffffff;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.logo img {
+    float: left;
+    margin-top: 3px;
+    margin-left: 20px;
+}
+
+.header-top {
+    height: 408px;
+}
+
+.header .contacts {
     float: right;
+    margin: 10px 30px 20px 0;
+}
+
+.header .contacts h5 {
+    font-family: Tahoma, Arial, sans-serif;
     color: #128aa7;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 7px;
 }
 
-.contacts {
-    padding: 9% 2% 2% 50%
+.header .contacts p {
+    font-family: Tahoma, Arial, sans-serif;
+    color: #128aa7;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 5px;
+}
+/*спрайты*/
+.flags ul{
+	margin-right: 30px;
+}
+.flags ul li a {
+    background: url(../img/spritesheet.png) no-repeat;
+    display: inline-block;
+    float: right;
+    height: 45px;
+    width: 45px;
+    margin: 10px 6px 10px 6px;
 }
 
-.country {
+.flags ul li a.maldives {
+    background-position: -109px -5px;
+}
+
+.flags ul li a.sri-lanka {
+    background-position: -213px -5px;
+}
+
+.flags ul li a.bhutan {
+    background-position: -5px -5px;
+}
+
+.flags ul li a.tibet {
+    background-position: -265px -5px;
+}
+
+.flags ul li a.nepal {
+    background-position: -161px -5px;
+}
+
+.flags ul li a.india {
+    background-position: -57px -5px;
+}
+
+.flags ul li a span {
+    margin-top: 47px;
+    display:block;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #128aa7;
+    font-size: 10px;
+    font-weight: 400;
+    text-decoration: underline;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.head-img img {
+    border-top: 1px solid #138aa7;
+    border-bottom: 1px solid #138aa7;
+}
+/* Верхнее меню */
+.menu-header > ul {
+    background: linear-gradient(to bottom, rgba(55, 55, 55, 1) 0%, rgba(48, 48, 48, 1) 100%);
+}
+
+.menu-header li {
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+}
+
+.first_li{
+	padding-left: 18px;
+}
+
+.menu-header li a {
+    display: block;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ebebeb;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 10px 10px 47px;;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu-header li a sub {
     font-size: 10px;
 }
-
-.country li {
-    display: inline-block;
-    padding-right: 10px;
-}
-
-.country div,
-.country a {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.india {
-    width: 42px;
-    height: 42px;
-    background: url("../Img/flags.png") 0 0 no-repeat;
-}
-
-.nepal {
-    width: 42px;
-    height: 42px;
-    background: url("../Img/flags.png") -42px 0 no-repeat;
-}
-
-.tailand {
-    width: 42px;
-    height: 42px;
-    background: url("../Img/flags.png") -84px 0 no-repeat;
-}
-
-.butan {
-    width: 42px;
-    height: 42px;
-    background: url("../Img/flags.png") -126px 0 no-repeat;
-}
-
-.shri {
-    width: 42px;
-    height: 42px;
-    background: url("../Img/flags.png") -168px 0 no-repeat;
-}
-
-.maldivs {
-    width: 42px;
-    height: 42px;
-    background: url("../Img/flags.png") -210px 0 no-repeat;
-}
-
-.country a:visited {
-    color: #128aa7;
-}
-
-.picture {
-    box-shadow: inset 0 -5px 0 #006699;
-}
-
-.clearfix {
-    clear: both;
-}
-
-/*MENU*/
-
-.menu_cont ul {
-    display: block;
-    background-color: #323232;
-    padding-left: 6%;
-    box-shadow: 0 4px 1px -1px rgba(0, 0, 0, .9);
-    border-bottom: 1px solid black;
-    z-index: 2;
-}
-
-.menu_cont ul:after {
-    display: block;
-    content: ' ';
-    clear: both;
-}
-
-.menu_cont ul.menu > li {
-    float: left;
-    position: relative;
-    padding-right: 4.5%;
-}
-
-.menu_cont ul.menu > li > a {
-    display: block;
-    padding: 10px;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.menu_cont ul.submenu {
+/* выпадающий список */
+.menu-header .submenu {
     display: none;
     position: absolute;
-    width: 120px;
-    top: 37px;
-    left: 0;
-    padding: 0;
-    box-shadow: 0 6px 2px -2px rgba(0, 0, 0, .5);
-    border-top: 1px solid black;
 }
 
-.menu_cont ul.submenu > li {
+.menu-header li:hover ul {
+    display: block;
+    z-index: 1000;
+}
+
+.menu-header .submenu {
+    background-color: #303030;
+    box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.75);
+    border-top: 1px solid #000000;
+    width: 160px;
+}
+
+.menu-header .submenu li {
     display: block;
 }
 
-.menu_cont ul.submenu > li > a {
-    display: block;
-    padding: 10px;
-    color: #ffffff;
-    text-decoration: none;
+.menu-header .submenu a {
+    font-family: Tahoma, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
 }
-
-.menu_cont ul.menu > li:hover > ul.submenu {
-    display: block;
-}
-
-/*CONTENT*/
-
-h2 {
-    font-weight: 700;
-}
-
-.flex {
-    box-sizing: border-box;
-}
-
+/* Контент */
 .content {
     display: flex;
     justify-content: space-between;
-    min-height: 550px;
+}
+
+.content .information,
+.content .news {
+    width: 208px;
+    background: #edeef0;
+}
+
+.content .information h4,
+.content .news h4 {
+    font-family: Tahoma, Arial, sans-serif;
     color: #424c43;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 8px;
 }
 
-.info{
-	text-align: center;
+.content .information p,
+.content .news p {
+    font-family: Tahoma, Arial, sans-serif;
+    color: #424c43;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding: 0 15px 5px 15px;
 }
-.leftside,
-.centerside,
-.rightside {
-    padding: 10px;
-    line-height: 1.5;
-}
-
-.leftside,
-.rightside {
-    width: 20%;
-    background-color: #edeef0;
-    margin-top: 4px;
-}
-
-.centerside {
-    width: 60%;
-    border: 1px solid #c7cacf;
-    margin-top: 4px;
-}
-
-/*Footer*/
-
-.foot {
-    color: #fff;
+/* Футер */
+.footer p {
+    font-family: Tahoma, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    height: 18px;
+    padding: 9px;
+    font-size: 12px;
+    font-weight: 400;
     text-align: center;
 }
