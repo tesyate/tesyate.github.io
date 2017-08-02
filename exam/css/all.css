@@ -1,0 +1,251 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url("../../fonts/Montserrat-Bold");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url("../../fonts/Roboto-Light");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  font-family: "Montserrat-Bold", sans-serif;
+  color: white;
+  width: 320px;
+  height: 540px;
+  margin: 0 auto;
+  background: url("../../img/mobile/bg_mob.jpg") 0 0 no-repeat;
+  text-align: center;
+  justify-content: space-between;
+  float: none;
+  padding-top: 20px;
+}
+
+.menu {
+  font-family: "Montserrat-Bold", sans-serif;
+  margin: 0 0 0 84px;
+  max-height: 32px;
+  min-width: 152px;
+  float: none;
+}
+
+.menu_item {
+  padding: 8px 0 8px 0;
+  float: left;
+}
+
+.menu_item_sign {
+  padding: 6px 0 6px 0;
+  width: 86px;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-left: 18px;
+}
+
+.menu_link {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 20px;
+  letter-spacing: 1.05px;
+  margin-top: 150px;
+}
+
+.promo {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 30px;
+  letter-spacing: 1.05px;
+  word-spacing: 0.9px;
+  margin-top: 30px;
+}
+
+.find {
+  max-width: 220px;
+  font-family: "Roboto-Light", sans-serif;
+  font-size: 18px;
+  margin: 15px 0 0 50px;
+}
+
+.btn {
+  font-family: "Montserrat-Bold", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.55px;
+  background-color: #ff4e50;
+  border: none;
+  border-radius: 20px;
+  width: 280px;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.wrapper {
+  font-family: "Montserrat-Bold", sans-serif;
+  width: 320px;
+  height: 3365px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-between;
+  float: none;
+  margin-top: 15px;
+}
+
+.wrapper__work-title {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.65px;
+}
