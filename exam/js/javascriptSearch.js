@@ -6,11 +6,8 @@ $(function(){
 	        Search();
 	    }
 	});
-	$('.btn').on('click', function() {Search();});
+	$('.bttn').on('click', function() {Search();});
 	function Search(){
-			$('.desc').remove();
-			$('.diss').remove();
-			$('.example').remove();
 			var j = 0;
 			var API_KEY = '5791277-28b7852e9013d3c3d2a7a9048';
 			var quest = $('#request').val();
@@ -20,6 +17,9 @@ $(function(){
 			var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(quest);
 			$.getJSON(URL, function(data){
 			    if (parseInt(data.totalHits) > 0){
+			    	$('.desc').remove();
+					$('.diss').remove();
+					$('.example').remove();
 					var unter = data.hits.slice(0, 7);
 			        $.each(unter, function(i, hit){
 			        	j++;
@@ -45,10 +45,7 @@ $(function(){
 			        
 				}
 			    else{
-			        var a = document.createElement('h1');
-					document.body.appendChild(a);
-					a.classList.add('example');
-					a.innerHTML = 'Картинок за даним запитом не знайдено';
+			        $('#request').val('');
 				}
 			});
 		};
