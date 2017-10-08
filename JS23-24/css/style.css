@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    width: 400px;
+    vertical-align: center;
+    margin: 0 auto;
+}
+
+.wrapper{
+	margin-top: 50px;
+}
+
+.item-delete{
+	color: red;
+	float: right;
+	margin-right: 50px;
+}
+
+.item-edit{
+	color: green;
+	float: right;
+	margin-right: 20px;
+}
+li{
+	list-style-image: url(../img/favicon-16x16.png);
+}
+.controlls{
+	margin-top: 10px;
+}

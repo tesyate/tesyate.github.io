@@ -1,0 +1,1 @@
+"use strict";$((jQuery,$(".jcarousel").jcarousel({list:".jcarousel-list",items:".jcarousel-item",animation:"slow",center:!0}),void $(".jcarousel-pagination").jcarouselPagination({item:function(n,o){return'<div class="jcarousel-pagination__basic"><div class="jcarousel-pagination__checked"></div></div>'}})));

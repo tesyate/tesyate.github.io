@@ -1,0 +1,98 @@
+@media all and (min-width: 479px) and (max-width: 768px) {
+
+  .above-the-fold__slider-text {
+  margin-left: 20px;
+  }
+
+  .testimonials__title {
+    padding: 20px;
+    margin-left: 20px;
+  }
+
+  .testimonials__message-wrap {
+    width: calc(100% - 40px);
+  }
+
+  .footer__nav {
+    padding: 35px 0;
+  }
+
+  .footer__list {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+  }
+
+  .above-the-fold__slider {
+    margin-bottom: 20px;
+  }
+
+  .above-the-fold__slider-text {
+    width: 40%;
+  }
+
+  .above-the-fold__second-heading {
+    font-size: 18px;
+  }
+
+  .above-the-fold__paragraph {
+    display: none;
+  }
+
+  .above-the-fold__phones {
+    margin-top: -25px;
+  }
+
+  .above-the-fold__play-btn {
+    top: 135px;
+    left: 130px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .above-the-fold__icon {
+    font-size: 18px;
+    top: 17px;
+    left: 21px;
+  }
+
+  .news__container {
+    display: block;
+    padding: 80px 0;
+    width: calc(100% - 40px);
+  }
+
+  .news__container div {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .sponsors__item {
+    width: 33.3%;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .footer__nav  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__list-item,
+  .footer__link {
+    padding: 0;
+  }
+
+  .above-the-fold__nav-link:hover {
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+  }
+
+  .about-us__content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

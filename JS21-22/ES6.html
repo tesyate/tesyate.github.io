@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Test</title>
+		<style>
+			body{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		 
+		<script>
+		'use strict';
+			const subtitle = "Тест по программированию";
+			const questions=[
+			{
+			    text: "Вопрос 1",
+			    answers: ["var 1",
+			          "var 2",
+			          "var 3"],
+			    correctAnswer: 0
+			},
+			{
+			    text: "Вопрос 2",
+			    answers: ["var 1",
+			          "var 2",
+			          "var 3"],
+			    correctAnswer: 1
+			},
+			{
+			    text: "Вопрос 3",
+			    answers: ["var 1",
+			          "var 2",
+			          "var 3"],
+			    correctAnswer: 2
+			}
+			];
+			let correct = [];
+			for (let i = 0; i < questions.length; ++i){
+				correct[i]=questions[i].correctAnswer;
+			};
+			let trust = [{},{},{}];
+			for (let i = 0; i < questions.length; ++i){
+				trust[i].ask=questions[i].text;
+				trust[i].answer=questions[i].answers[correct[i]];
+			};
+			console.log('true', JSON.stringify(trust));
+			localStorage.setItem('true', JSON.stringify(trust));
+			console.log(localStorage.getItem('true'))
+			let yourAns = new Array;
+			let score = 0;
+			let Engine = (question, answer) => yourAns[question]=answer;
+
+			function Score(){
+			   let answerText = "Результаты:\n";
+			   for(let i = 0; i < yourAns.length; ++i){
+			    let num = i+1;
+			    answerText=answerText+"\n    Вопрос №"+ num +"";
+			    if(yourAns[i]!=questions[i].correctAnswer){
+			        answerText=answerText+"\n    Правильный ответ: " +
+			        questions[i].answers[questions[i].correctAnswer] + "\n";
+			      }
+			        else{
+			        answerText=answerText+": Верно! \n";
+			        ++score;
+			        }
+			       };
+
+			   answerText=answerText+"\nВсего правильных ответов: "+score+"\n";
+
+			   alert(answerText);
+			   yourAns = [];
+			   score = 0;
+			   clearForm("quiz");
+			};
+			function clearForm(name) {
+			   let f = document.forms[name];
+			   for(let i = 0; i < f.elements.length; ++i) {
+			    if(f.elements[i].checked)
+			        f.elements[i].checked = false;
+				};
+			};
+		</script>
+		<h2></h2>
+
+		<form name="quiz" id="results">
+		<ol >
+			<script>
+			'use strict';
+				for(let q=0; q<questions.length; ++q) {
+				   let question = questions[q];
+				   let idx = 1 + q;
+				   document.writeln('<li><span class="quest">' + question.text + '</span><br/>');
+				   for(let i in question.answers) {
+					    document.writeln('<input type=radio name="q' + idx + '" value="' + i +
+					    '" onClick="Engine(' + q + ', this.value)">' + question.answers[i] + '<br/>');
+				   }
+				}
+			</script>
+		
+		
+		</ol>
+		<input type="button" onClick="Score()" value="Проверить результаты" />
+		
+
+		</form>
+		
+	</body>
+</html>

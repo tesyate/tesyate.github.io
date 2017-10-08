@@ -1,0 +1,145 @@
+@media all and (min-width: 769px) and (max-width: 960px) {
+
+  header {
+    display: block;
+    margin-bottom: 70px;
+  }
+
+  .above-the-fold {
+    max-height: 800px;
+  }
+
+  .above-the-fold__logo,
+  .above-the-fold__nav,
+  .about-us__third-heading {
+    margin-left: 10px;
+  }
+
+  .nav-first,
+  .above-the-fold__nav-link,
+  .above-the-fold__first-list-item {
+    padding-left: 0;
+  }
+
+  .above-the-fold__slider-text {
+    margin-left: 10px;
+    width: 50%;
+  }
+
+  .above-the-fold__paragraph {
+    overflow: hidden;
+    max-height: 100px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .above-the-fold__slider {
+    margin-bottom: 35px;
+  }
+
+  .above-the-fold__pins {
+    justify-content: flex-end;
+    -float: right;
+    margin-right: 70px;
+  }
+
+  .about-us__columns {
+    color: #fff;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .about-us__content {
+    margin-right: 10px;
+  }
+
+  .about-us__read-more-link {
+    margin-right: 0;
+  }
+
+  .about-us__paragraph {
+    margin-left: 42px;
+  }
+
+  .testimonials__third-heading,
+  .testimonials__third-heading_colored {
+    display: block;
+  }
+
+  .testimonials__third-heading {
+    margin-left: 0px;
+  }
+
+  .testimonials__title {
+    padding-top: 15px;
+    margin-left: 40px;
+  }
+
+  .testimonials__paragraph-left p {
+    font-size: 15px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+  }
+
+  .news__container div {
+    margin-right: 30px;
+  }
+
+  .testimonials__third-heading_colored {
+    margin-left: 0;
+  }
+
+  .testimonials__paragraph-right p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .testimonials__article-body {
+    max-width: 260px;
+  }
+
+  .testimonials__article-paragraph {
+    max-height: 26px;
+    overflow-y: hidden;
+  }
+
+  .testimonials__remo-link {
+    padding-right: 50px;
+  }
+
+  .news__left-column {
+    margin-left: 10px;
+  }
+
+  .footer__list-item {
+    padding: 0 10px 0 10px;
+  }
+
+  .footer__design-author {
+    margin-top: 60px;
+  }
+
+  @-moz-document url-prefix() {
+    .above-the-fold__paragraph {
+      max-height: 92px;
+      line-height: 23px;
+    }
+
+    .testimonials__paragraph-right h4 {
+      line-height: 30px;
+    }
+
+    .testimonials__paragraph-right p {
+      line-height: 30px;
+      max-height: 30px;
+      overflow-y: hidden;
+    }
+  }
+}

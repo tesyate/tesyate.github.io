@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	left: 50%;
+	width: 616px;
+	height: 314px;
+	margin: 0 0 0 -313px;
+	position: relative;
+}
+.searching{
+	float: left;
+	width: 556px;
+	height: 50px;
+	font-size: 20px;
+}
+.btn{
+	width: 50px;
+	margin-left: 5px;
+	background-image: url('../img/loop.png');
+}

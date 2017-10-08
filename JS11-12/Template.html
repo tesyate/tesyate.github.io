@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Template</title>
+		<script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+		<script src="js/template.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/styleTem.css"/>
+	</head>
+	<body>
+		
+		 <ul id="results">
+		output results here.
+		 </ul>
+		
+		<script type="text/html" id="item_tmpl">
+		  <% for ( var i = 0; i < members.length; i++ ) { %>
+		    <li id="<%=members[i].id%>" class="<%=(i % 2 == 1 ? " even" : " odd")%>">
+		       <b><%=members[i].name%></b> <br /> <%=members[i].text%> <br />
+		       ------------------------------------------------------------
+		    </li>
+		  <% } %>
+		</script>
+	</body>
+</html>
